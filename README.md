@@ -1,53 +1,50 @@
-# Spotify-Dashboard
-Spotifyzer is a interactive Power BI dashboard designed to analyse and visualise Spotify music data. This project provide insights into track popularity, audio features (such as danceability, energy, tempo), artist trend, and playlist metric to help user's better understand music consumption pattern and preferences.
-## 🔍 Key Features
-🎶 Top Tracks & Artists – Identify the most popular songs and artists.
+# Spotifyzer: Spotify Listening Dashboard
 
-🎛️ Audio Feature Analysis – Explore characteristics like danceability, energy, valence, and tempo.
+An interactive Power BI dashboard for exploring Spotify music data: track popularity, audio features (danceability, energy, valence, tempo), artist trends and listening patterns. Data was extracted with the Spotify API before building the report.
 
-📈 Trend Visualization – Understand how musical attributes change over time.
+## Report structure
 
-🧠 Interactive Filters – Segment data by year, artist, genre, or other categories.
+`Spotifyzer.pbix` has three pages (read directly from the file):
 
-📂 Custom Metrics – Insightful KPIs built using DAX.
+```mermaid
+flowchart LR
+    A[Overview<br/>KPI cards, area, bar and donut charts, slicers] --> B[Listening Pattern<br/>bar, scatter, pivot table, slicers]
+    B --> C[Details<br/>pivot tables, navigation buttons]
+```
 
-📁 Files Included
-Spotifyzer.pbix – Power BI dashboard file (fully interactive and ready to explore)
+| Page | Visuals used |
+|---|---|
+| Overview | Cards, area chart, bar charts, donut chart, slicers, images |
+| Listening Pattern | Bar charts, scatter chart, pivot table, slicers |
+| Details | Pivot tables and action buttons for navigation |
 
-## 🛠️ Technologies Used
-Power BI Desktop
+## What you can explore
 
-DAX (Data Analysis Expressions)
+- Most popular tracks and artists
+- Audio-feature profiles such as danceability, energy, valence and tempo
+- How musical attributes change over time
+- Filters by year, artist, genre and other categories
+- Custom KPIs built with DAX
 
-Spotify API (used to extract data prior to building the dashboard)
+## Files
 
-## 🚀 How to Use
-Download and install Power BI Desktop.
+| File | Purpose |
+|---|---|
+| `Spotifyzer.pbix` | The Power BI report |
+| `Spotifyzer Dashboard.docx` | Written description of the dashboard |
 
-Clone this repository or download the .pbix file directly.
+## Open it
 
-Open the Spotifyzer.pbix file in Power BI Desktop.
+1. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows).
+2. Download `Spotifyzer.pbix`.
+3. Open it and use the slicers to explore.
 
-Interact with the dashboard to explore insights.
+## Ideas for next steps
 
-📷 Dashboard Preview
-(Optional: Add a screenshot of your dashboard here)
+- Live Spotify API refresh
+- Recommendations based on audio preferences
+- Genre clustering
 
-## 📚 Learning Goals
-Practice data modeling and transformation in Power BI
+## Stack
 
-Apply DAX to create custom calculations
-
-Develop interactive dashboards with storytelling elements
-
-Understand Spotify’s audio features and their relationships
-
-## 💡 Future Enhancements
-Dynamic integration with live Spotify API
-
-User-level recommendations based on audio preferences
-
-Genre clustering and sentiment analysis
-
-## 📬 Contact
-For questions or collaboration, feel free to connect via GitHub or email.
+`Power BI` `DAX` `Spotify API`
